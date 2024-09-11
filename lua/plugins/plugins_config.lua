@@ -9,7 +9,9 @@ logo = string.rep("\n", 6) .. logo .. "\n\n"
 return {
     {
         "neovim/nvim-lspconfig",
-        opts = { inlay_hints = { enabled = false } }
+        opts = { inlay_hints = { enabled = false },
+                 vitual_text = false
+        }
     },
     {
         "nvimdev/dashboard-nvim",
