@@ -6,3 +6,8 @@ vim.o.softtabstop = 4
 vim.o.tabstop = 4
 vim.o.relativenumber = false
 vim.g.autoformat = false
+
+vim.api.nvim_create_autocmd({ "BufWrite" }, {
+    pattern = { "*" },
+    command = "silent ! git add . && git commit -m autoupd",
+})
