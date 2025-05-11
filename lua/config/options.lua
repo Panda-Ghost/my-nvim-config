@@ -11,3 +11,4 @@ vim.api.nvim_create_autocmd({ "BufWrite" }, {
     pattern = { "*" },
     command = "silent ! git add . && git commit -m autoupd",
 })
+
