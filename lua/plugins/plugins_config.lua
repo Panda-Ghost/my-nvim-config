@@ -17,6 +17,10 @@ return {
         "nvimdev/dashboard-nvim",
         opts = { config = { header = vim.split(logo, "\n") } }
     },
-    { "mason-org/mason.nvim", version = "^1.0.0" },
-    { "mason-org/mason-lspconfig.nvim", version = "^1.0.0" },
+    { "mason-org/mason.nvim"
+       -- , version = "^1.0.0"
+    },
+    { "mason-org/mason-lspconfig.nvim"
+       -- , version = "^1.0.0"
+    },
 }
